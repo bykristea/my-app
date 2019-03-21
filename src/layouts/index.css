@@ -22,7 +22,7 @@ a {
 }
 
 .Hero {
-  background: url('../img/wallpaper3.jpg');
+  background: url('../img/walpapper8.jpeg');
   height: 920px;
   background-size: cover;
   background-position: center;
@@ -50,7 +50,7 @@ a {
 }
 
 .Hero p {
-  color: rgba(194, 0, 65, 0.7);
+  color: rgba(255, 254, 143, 0.7);
   font-size: 30px;
   line-height: 1.5;
   animation: HeroAnimation 3s 0.2s forwards  cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -58,20 +58,25 @@ a {
 }
 
 .Hero a {
-  font-size: 17px;
-  font-weight: 600;
-  color: #7EE1DA;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.7);
-  padding: 9px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
+  padding: 8px 20px;
+    font-size: 16px;
+    color: #7EE1DA;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.7);
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+
 }
 
 .Hero a:hover {
   background: #7EE1DA;
   color: black;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  transform: translateY(-3px);
 }
 
 @media(max-width: 640px) {
@@ -104,4 +109,48 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+/* .Hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+  margin: 100px -80px;
+  /* justify-items: center; */
+
+
+@media (max-width: 640px) {
+  .Hero .Logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.Cards h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #E61058 0%, #F05C8E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .CardGroup {
+  grid-template-columns: repeat(1, 1fr);
+  }
 }
